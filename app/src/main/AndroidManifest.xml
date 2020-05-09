@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lk.shenal.DogGo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui_presenters.settingsActivity" android:theme="@style/FullTheme"></activity>
+        <activity
+            android:name=".ui_presenters.SearchBreedActivity"
+            android:theme="@style/FullTheme" />
+        <activity
+            android:name=".ui_presenters.IdentifyDogActivity"
+            android:theme="@style/FullTheme" />
+        <activity
+            android:name=".ui_presenters.IdentifyBreedActivity"
+            android:theme="@style/FullTheme" />
+        <activity
+            android:name=".ui_presenters.MainPageActivity"
+            android:theme="@style/FullTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
